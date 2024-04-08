@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F8FA;
+    color: #333;
+}
+
+/* Smooth transition for hover effects */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Header styles */
+#header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    border-radius: 50%;
+    width: 106px;
+    height: 106px;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 3px solid #B4F0BE;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: linear-gradient(45deg, #76b852, #8DC26F);
+    color: white;
+    margin: 0;
+    font-size: 16px;
+}
+
+#navbar a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#navbar a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Main content */
+#content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #76b852;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+}
+
+#social {
+    display: flex;
+}
+
+.social-link {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Enhancements for forms and buttons */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #navbar, #footer {
+        flex-direction: column;
+    }
+    
+    #navbar a, .social-link {
+        margin: 5px;
+    }
+}
+
+/* Additional aesthetic improvements */
+body {
+    background: linear-gradient(to right, #E6F1E3, #F5F8FA);
+}
+
+/* Content Styling */
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+/* Resize Social Media Icons */
+#social img {
+    width: 24px; /* Adjust this value to fit your design */
+    height: auto; /* Keeps the aspect ratio intact */
+    vertical-align: middle; /* Aligns the icon vertically with any adjacent text or elements */
+}
+
+/* Alternatively, if you're targeting specifically the Twitter icon */
+.twitter-icon {
+    width: 24px; /* Or any size that fits */
+    height: auto;
+}
+
+/* Enhance visuals with shadows and more */
+#content, .container {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* Resize Profile Picture */
+.profile-picture {
+    width: 150px; /* Adjust this value to the desired width */
+    height: auto; /* Keeps the aspect ratio intact */
+    border-radius: 50%; /* Optional: creates a circular profile picture */
+    object-fit: cover; /* Ensures the image covers the area without losing aspect ratio */
+    display: block; /* Optional: use if you want to center the image */
+    margin: 0 auto; /* Optional: centers the image horizontally */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F0F0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#header .logo {
+    transition: transform 0.5s ease;
+}
+
+#header .logo:hover {
+    transform: rotate(360deg);
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+#navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#navbar a:hover, #navbar a.active {
+    background-color: #555;
+}
+
+#about {
+    padding: 20px;
+    text-align: justify;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#social a {
+    margin: 0 10px;
+}
+
+#social img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+#social img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+    }
+}
+
+/* Add to your existing CSS, ensuring not to duplicate existing rules */
+
+.service-item {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #76b852; /* Accent color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-item h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Ensuring the active link is highlighted */
+#navbar a.active {
+    background-color: #76b852;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Smooth transitions for social links */
+#social a {
+    transition: transform 0.3s ease;
+}
+
+#social a:hover img {
+    transform: scale(1.1);
+}
